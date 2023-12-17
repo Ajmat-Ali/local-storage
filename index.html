@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>localStorage</title>
+    <style>
+      dl {
+        /* border: 2px solid red; */
+        /* margin-left: 50%; */
+        text-align: center;
+        margin-top: 50px;
+      }
+      dl dt {
+        margin-bottom: 10px;
+      }
+      dl dd {
+        margin-bottom: 30px;
+      }
+      .submitDiv {
+        text-align: center;
+      }
+      table {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        margin-top: 50px;
+        border: 1px solid red;
+        display: none;
+      }
+      #div-ret {
+        width: 10%;
+        margin: auto;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <dl>
+        <dt>Name</dt>
+        <dd>
+          <input type="text" name="" id="user-name" />
+        </dd>
+        <dt>Age</dt>
+        <dd>
+          <input type="number" name="" id="user-age" />
+        </dd>
+      </dl>
+      <div class="submitDiv">
+        <input type="submit" />
+      </div>
+    </form>
+    <div id="div-ret">
+      <input type="submit" name="" id="retrieve" value="Retrieve" />
+    </div>
+    <table border="1" cellpadding="10" cellspacing="0" id="tabel">
+      <thead>
+        <tr>
+          <th colspan="3">
+            <h1>User Details</h1>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th id="dName">-</th>
+        </tr>
+        <tr>
+          <th>Age</th>
+          <th id="dAge">-</th>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  <script src="index.js"></script>
+</html>
